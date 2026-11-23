@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | BlogSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">BlogSpace</a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="create-blog.html">Write a blog</a>
+        <button id="logout-btn" class="text-button">
+          Logout
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">YOUR WORKSPACE</p>
+        <h1>Dashboard</h1>
+        <p class="muted" id="dashboard-welcome"></p>
+      </div>
+
+      <a class="btn" href="create-blog.html">
+        + New blog
+      </a>
+    </div>
+
+    <div id="dashboard-list"
+      class="dashboard-list" aria-live="polite"></div>
+
+    <p id="dashboard-message" class="form-message"></p>
+
+    <h1>My Blog Dashboard</h1>
+
+<a href="create-blog.html">
+  <button>Create New Blog</button>
+</a>
+<input
+  type="text"
+  id="searchInput"
+  placeholder="Search blogs..."
+/>
+<div id="blogContainer"></div>
+
+
+  </main>
+
+  <script src="script.js"></script>
+  <script src="api.js"></script>
+</body>
+</html>
